@@ -1,0 +1,29 @@
+
+
+
+
+fazer pagina de digitação
+  1. criar pagina do texto com um box e um txto teste
+  2. opção de voltar
+  3. texto 
+  4. estilizar o texto e cursor tipo cmd 
+  5. estilizar texto de fundo que voce vai digitar por cima
+
+
+
+
+pagina inicial 
+  1. lista de arquivos que voce pode digitar
+  2. opções do arquivo ( ... excluir)
+  3. adicionar arquivo ( abrir caixa de texto para inserir texto)
+  4. opção de salvar texto e gravar ele nos arquivos
+
+
+  .depois
+  1.opção de compartilhar no (...) 
+  2.copiar projeto do git
+  3.copiar profundidade dos projetos(razo,medio, fundo, tudo)
+
+uma pagina inicial com uma lista de oçoes de texto para serem digitados. 
+
+Os commits que forem feitos serão uma especie de documentação tambem
