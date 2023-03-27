@@ -3,12 +3,16 @@
 
 
 fazer pagina de digitação
-  1. criar pagina do texto com um box e um txto teste
+  1. criar pagina do texto com um box e um txto teste(feito)
   2. opção de voltar
-  3. texto 
+  3. texto (feito)
   4. estilizar o texto e cursor tipo cmd 
-  5. estilizar texto de fundo que voce vai digitar por cima
-
+  5. estilizar texto de fundo que voce vai digitar por cima (feito)
+  6. criar config
+    6.1.configurar estilização da pagina e dos textos
+  7. função digitar texto com texto de fundo
+  8. afastar texto da borda superior
+  9. criar um head que vai botão voltar, home(logo) e opçoes > config
 
 
 
@@ -17,6 +21,7 @@ pagina inicial
   2. opções do arquivo ( ... excluir)
   3. adicionar arquivo ( abrir caixa de texto para inserir texto)
   4. opção de salvar texto e gravar ele nos arquivos
+  
 
 
   .depois
