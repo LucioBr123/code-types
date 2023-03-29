@@ -15,7 +15,7 @@ textoDigitado.addEventListener('input', () => {
 })
 
 
-//esse veio do GPT kk
+//esse veio do GPT kkkk
 const inputs = {}
 const inputElements = document.querySelectorAll('input')
 inputElements.forEach(input => {
