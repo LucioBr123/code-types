@@ -16,12 +16,11 @@ fazer pagina de digitação
     estilização decidida 
     agora falta definir a logica da digitação do texto que será feita no JS
 
-      1. criar texto esperado 
-      2. criar texto que está sendo digitado
+      1. criar texto esperado (feito)
+      2. criar texto que está sendo digitado (feito)
       3. criar logica de texto ser um span adicionado ao elemento pai se for digitado errado
-
-    fazer um span sempre que o que for digitado do que se espera para ficar diferente
-  ) em andamento 
+      4. Fazer logica de capturar elementos que estão diferente do esperado(feito)
+  ) (em andamento) 
 
   
   8. afastar texto da borda superior

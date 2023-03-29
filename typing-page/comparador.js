@@ -3,7 +3,7 @@ import { textoArray, textoTelaArray } from "./main"
 
 // comparar arquivos 
 
-export function diferenca(){
+function diferenca(){
   let indiceDiferenca = []
 
   for (let i ; textoArray.length < i ; i++) {

@@ -1,5 +1,3 @@
-import { diferenca, diferenca } from "./comparador"
-
 var texto = `System.Console.WriteLine("Hello World!");`
 
 
@@ -11,12 +9,34 @@ var textoDigitado = document.getElementById('digitado')
 var textoTela = document.getElementById('texto')
 textoTela.innerHTML = textoDigitado.value
 
-export const textoArray = textoDigitado.value.split(/(?!$)/u)
-export const textoTelaArray = String(texto).split(/(?!$)/u)
 
 textoDigitado.addEventListener('input', () => {
   textoTela.textContent = textoDigitado.value
+})
+
+
+//esse veio do GPT kk
+const inputs = {}
+const inputElements = document.querySelectorAll('input')
+inputElements.forEach(input => {
+  input.addEventListener('input', () => {
+
+    const textoArray = String(input.value).split(/(?!$)/u) 
+    const textoTelaArray = String(texto).split(/(?!$)/u)
+    erro = []
+    
+    for (let i = 0 ; textoArray.length > i ; i++) {
+      if (textoArray[i] != textoTelaArray[i] ){
+        erro.push(i)
+      } 
+    } 
+    console.log(erro)
+  });
 });
+
+
+
+
 
 
 
