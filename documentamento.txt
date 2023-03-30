@@ -18,7 +18,7 @@ fazer pagina de digitação
 
       1. criar texto esperado (feito)
       2. criar texto que está sendo digitado (feito)
-      3. criar logica de texto ser um span adicionado ao elemento pai se for digitado errado
+      3. criar função de mudar aparecia de objetos que estão diferentes do esperado 
       4. Fazer logica de capturar elementos que estão diferente do esperado(feito)
   ) (em andamento) 
 

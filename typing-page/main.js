@@ -7,12 +7,14 @@ textoPagina.innerHTML = texto
 
 var textoDigitado = document.getElementById('digitado')
 var textoTela = document.getElementById('texto')
-textoTela.innerHTML = textoDigitado.value
 
 
-textoDigitado.addEventListener('input', () => {
-  textoTela.textContent = textoDigitado.value
-})
+
+// textoDigitado.addEventListener('input', () => {
+//   textoTela.textContent = textoDigitado.value
+// })
+
+///aqui temos a função que cria os elementos na tela 
 
 
 //esse veio do GPT kkkk
@@ -30,7 +32,36 @@ inputElements.forEach(input => {
         erro.push(i)
       } 
     } 
-    console.log(erro)
+
+    
+
+
+    
+
+    arrayCerto = textoTelaArray
+    arrayDigitado = textoArray
+    arrayErrado = erro
+
+    // validar se o index do digitado está como o esperado
+      // se estiver certo armazena o indice do array certo no compilador e vai para o proxima letra
+      //se estiver errado compila tudo que está armazenado no array compilador, imprime o texto como certo e limpa o compilador, imprime a letra do errado
+    compilador = []
+    for (let ip = 0; arrayDigitado.length > ip; ip++ ){
+      for (let i = 0; erro.length > i; i++ ){
+        if (erro[i] != arrayCerto[ip]){
+          compilador.push(arrayDigitado[ip])
+        }else{
+          let armazenado = compilador.join()
+          compilador = []
+          //imprime armazenado como certo
+          
+          //imprime o errado como errado
+        }
+      }
+    }
+    
+
+
   });
 });
 
