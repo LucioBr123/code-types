@@ -54,7 +54,33 @@ inputElements.forEach(input => {
           let armazenado = compilador.join()
           compilador = []
           //imprime armazenado como certo
+
+          // // Selecionando a div existente
           
+          var div = document.querySelector('#box-text')
+          // // Criando um novo elemento p
+          
+          var novo = document.createElement('p')
+          // // Adicionando texto ao novo parágrafo
+          
+          novo.innerHTML = armazenado
+          // // Atribuindo uma classe ao novo parágrafo
+          
+          novo.classList.add('texto')
+          // // Adicionando o novo parágrafo à div existente
+          
+          div.appendChild(novo)
+          //atribui id do delet
+
+          
+          var novoErro = document.createElement('span')
+
+          novoErro.innerHTML = arrayDigitado[i]
+
+          novoErro.classList.add('diferente')
+
+          div.appendChild(novoErro)
+
           //imprime o errado como errado
         }
       }
