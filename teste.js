@@ -67,9 +67,3 @@ inputElements.forEach(input => {
 });
 
 
-
-
-
-
-
-textoDigitado.focus()
