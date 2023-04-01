@@ -12,7 +12,7 @@
   color: rgba(255, 255, 255, 0.347);
 }
 
-.texto-digitado{
+.texto{
   position: absolute;
   margin-left: 10%;
   white-space: nowrap;
@@ -31,5 +31,4 @@
   height: 100%;
   opacity: 0;
 }
-
 
