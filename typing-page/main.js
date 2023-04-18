@@ -1,52 +1,42 @@
-let textoFundo = `Texto para digitar por cima`
-
-let boxTexto = document.getElementById('box-text')
-
-let textoPaginaFundo = document.getElementById('texto-fundo')
-textoPaginaFundo.innerText = textoFundo
-
-let textoDigitado = document.getElementById('digitado').value
-
-let textoPaginaDigitado = document.getElementById('texto-digitado')
-
-textoDigitado.addEventListener('input', () => {
+const esperado = `Para testar escreva uma letra errada :) Tente escrever abrindo e fechando chaver pra encaixar depois{{(TESTE)}}`
+let exibido = document.getElementById('texto-digitado')
+let letrasDigitadas = []
 
 
-  let letraErradaIndex = []
-  // Verifica os errados e armazena
-  for(let i = 0 ; textoDigitado.length < i ; i++ ){
-    if(textoDigitado[i] != textoFundo[i]){
-      letraErradaIndex += textoDigitado[i]
-    }  
-  }
+function escreveCerto(letra) {
+  exibido.innerHTML += letra; 
+}
 
-  //letraErradaIndex
-  function imprime(qtdErros) {
-    for (let i = 0; qtdErros > i; i++){
-       const certo = textoDigitado.substring(0,letraErradaIndex[i - 1])
-       const errado = textoDigitado[i]
-       var novoCerto = document.createElement('p')
-       novoCerto.id = 'texto-digitado'
-       novoCerto.innerText = certo
-       boxTexto.appendChild(novoCerto)
-       var novoErrado = document.createElement('span')
-       novoErrado.innerText = errado
-       novoCerto.appendChild(novoErrado)
+function escreveErrado(letra) {
+ let span = document.createElement('span');
+ span.innerText = letra;
+ exibido.appendChild(span);
+}
+
+
+const exibidoFundo = document.getElementById('texto-fundo')
+exibidoFundo.innerHTML = esperado
+
+const input = document.getElementById('digitado');
+
+input.addEventListener('input', () => {
+  const valor = input.value;
+  letrasDigitadas = valor.split('');
+  exibido.innerHTML = '';
+  
+  for (let i = 0; i < letrasDigitadas.length; i++) {
+    if (letrasDigitadas[i] === esperado[i]) {
+      escreveCerto(letrasDigitadas[i]);
+    } else {
+      escreveErrado(letrasDigitadas[i]);
     }
   }
-  imprime(letraErradaIndex.length)
   
-  // verificar pois não vai imprimir caso tenha texto depois do erro
-  // problemas de sintaxe linha 12
-  // verificar melhor forma de referenciar inicio e parada de impressão no substring
+  // Inserir o texto da função escreveCerto() após a última <span>
+  if (letrasDigitadas.length > 0) {
+    const ultimaSpan = exibido.lastElementChild;
+    ultimaSpan.insertAdjacentHTML('afterend');
+  }
+});
 
-
-
-
-  // textoPaginaDigitado.innerText = textoDigitado.value
-  // if(textoFundo != textoDigitado.value){
-  //   textoPaginaDigitado.style.color = 'red'
-  // }else{
-  //   textoPaginaDigitado.style.color = 'white'
-  // }
-})
+input.focus();
