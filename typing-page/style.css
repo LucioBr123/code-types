@@ -1,29 +1,30 @@
-*{
+/* Define estilos para todos os elementos */
+* {
   background-color: black;
   color: white;
   font-family: Consolas, monospace;
 }
 
-
-#texto-fundo{
-  
+/* Define estilos para o texto de fundo */
+#texto-fundo {
   margin-left: 10%;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.347);
 }
 
-#texto-digitado{
-  
+/* Define estilos para o texto digitado */
+#texto-digitado {
   margin-left: 10%;
   white-space: nowrap;
 }
 
-span{
+/* Define estilos para as letras incorretas */
+span {
   color: red;  
 }
 
-
-#digitado{
+/* Define estilos para o campo de entrada */
+#digitado {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,5 +32,3 @@ span{
   height: 100%;
   opacity: 0;
 }
-
-
