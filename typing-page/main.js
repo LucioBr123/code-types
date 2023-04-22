@@ -1,7 +1,8 @@
 // Define o texto esperado e inicializa as variáveis
-const textoEsperado = 'Texto de fundo para teste'
+const textoEsperado = `Texto de fundo para teste`
 let elementoTextoExibido = document.getElementById('texto-digitado')
 let letrasDigitadas = []
+let cursor = document.getElementById('cursor') // Adiciona uma referência ao elemento do indicador visual do cursor
 
 // Funções auxiliares para escrever letras corretas e incorretas
 function escreverLetraCorreta(letra) {
@@ -39,4 +40,5 @@ elementoInput.addEventListener('input', () => {
   
   // Move o cursor para o campo de entrada
   elementoInput.focus()
+  
 })
