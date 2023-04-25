@@ -6,7 +6,7 @@ fazer pagina de digitação
   1. criar pagina do texto com um box e um txto teste(feito)
   2. opção de voltar
   3. texto (feito)
-  4. estilizar o texto e cursor tipo cmd 
+  4. estilizar o texto e cursor tipo cmd  (feito)
   5. estilizar texto de fundo que voce vai digitar por cima (feito)
   6. criar config
     6.1.configurar estilização da pagina e dos textos
@@ -18,12 +18,12 @@ fazer pagina de digitação
 
       1. criar texto esperado (feito)
       2. criar texto que está sendo digitado (feito)
-      3. criar função de mudar aparecia de objetos que estão diferentes do esperado 
+      3. criar função de mudar aparecia de objetos que estão diferentes do esperado (feito)
       4. Fazer logica de capturar elementos que estão diferente do esperado(feito)
   ) (em andamento) 
 
   
-  8. afastar texto da borda superior
+  8. afastar texto da borda superior (feito)
   9. criar um head que vai botão voltar, home(logo) e opçoes > config
 
 
