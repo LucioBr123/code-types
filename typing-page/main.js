@@ -11,6 +11,14 @@ function escreverLetraCorreta(letra) {
 
 function escreverLetraIncorreta(letra) {
   let span = document.createElement('span')
+  span.id = 'crtrErrado';
+  span.innerText = letra
+  elementoTextoExibido.appendChild(span)
+}
+
+function escreverLetraIncorretaEspaco(letra) {
+  let span = document.createElement('span')
+  span.id = 'crtrErradoEspaco'
   span.innerText = letra
   elementoTextoExibido.appendChild(span)
 }
@@ -33,11 +41,17 @@ elementoInput.addEventListener('input', () => {
   for (let i = 0; i < letrasDigitadas.length; i++) {
     if (letrasDigitadas[i] === textoEsperado[i]) {
       escreverLetraCorreta(letrasDigitadas[i])
-    } else {
-      escreverLetraIncorreta(letrasDigitadas[i])
+    }else if(letrasDigitadas[i] ==! textoEsperado[i] &&  letrasDigitadas[i] === ' '){
+      escreverLetraIncorretaEspaco(textoEsperado[i])
+      console.log('incorretaEspaco')
     }
+    else {
+      escreverLetraIncorreta(letrasDigitadas[i])
+      console.log('incorreta')
+    }
+
   }
-  
+
   // Move o cursor para o campo de entrada
   elementoInput.focus()
   

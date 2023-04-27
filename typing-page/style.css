@@ -20,8 +20,13 @@
   white-space: pre-wrap;
 }
 
+
+#crtrErradoEspaco{
+  color: rgba(255, 255, 255, 0.524);
+}
+
 /* Define estilos para as letras incorretas */
-span {
+#crtrErrado {
   color: red;  
 }
 
@@ -41,3 +46,4 @@ span {
   outline: none;
   caret-color: rgb(255, 0, 238);
 }
+
