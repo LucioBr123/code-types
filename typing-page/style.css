@@ -36,14 +36,14 @@
   white-space: pre-wrap;
   top: 22px;
   position: absolute;
-  margin-left: 9.7%;
+  margin-left: 9.8%;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0);
   font-size: medium;
   width: 100%;
   opacity: 100;
   border: 0px solid;
-  outline: none;
+  /* outline: none; */
   caret-color: rgb(255, 0, 238);
 }
 
