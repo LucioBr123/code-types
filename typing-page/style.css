@@ -1,6 +1,6 @@
 /* Define estilos para todos os elementos */
 * {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: Consolas, monospace;
 }
@@ -33,17 +33,17 @@
 /* Define estilos para o campo de entrada */
 #digitado {
   background-color:rgba(255, 0, 0, 0) ;
-  white-space: pre-wrap;
+  
   top: 22px;
   position: absolute;
   margin-left: 9.8%;
-  white-space: nowrap;
+  
   color: rgba(255, 255, 255, 0);
   font-size: medium;
   width: 100%;
   opacity: 100;
   border: 0px solid;
-  /* outline: none; */
+  outline: none; 
   caret-color: rgb(255, 0, 238);
 }
 
