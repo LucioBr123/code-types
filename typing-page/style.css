@@ -37,7 +37,7 @@
   top: 22px;
   position: absolute;
   margin-left: 9.8%;
-  
+  white-space: pre-wrap;
   color: rgba(255, 255, 255, 0);
   font-size: medium;
   width: 100%;

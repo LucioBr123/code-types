@@ -1,5 +1,6 @@
 // Define o texto esperado e inicializa as variáveis
-const textoEsperado = `procedure TfrmTelaHerenca.btnCancelarClick(Sender: TObject);`
+const textoEsperado = `INSERT INTO TABELA (COLUNA COLUNA COLUNA)
+VALUES (VALOR VALOR VALOR)`
 let elementoTextoExibido = document.getElementById('texto-digitado')
 let letrasDigitadas = []
 let cursor = document.getElementById('cursor') // Adiciona uma referência ao elemento do indicador visual do cursor
